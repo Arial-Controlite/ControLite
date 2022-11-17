@@ -1,7 +1,7 @@
 # ControLite
 
 This project is yet another light-weighted approach to control _gadgets_ via the [Buttplug](https://github.com/buttplugio/buttplug) library.  
-It is designed for _gadgets_ users who are dread of the dull modes provided by the vendors.  
+It is designed for _gadgets_ users who are bored by the dull modes provided by the vendors.  
 
 ## Features
 
@@ -16,11 +16,10 @@ It is designed for _gadgets_ users who are dread of the dull modes provided by t
   - You can design your own pattern by writing a tiny function f: time -> \[speed0, speed1\].
   - We recommend using code instead of drawing lines to make your pattern more coherent and accurate.
 - Alarm clock (auto on):
-  - The idea comes from Magic Motion app, which can set a time to start your _gadgets_.
-  - However, you cannot switch to other modes or you have to reset your alarm afterwards.
+  - The idea comes from Magic Motion app, which can set a time to start your _gadgets_. However, on the original app, you cannot switch to other modes or you have to reset your alarm afterwards.
+  - On Controlite, you can continue playing.
 - Lock (developing):
   - You cannot stop your _gadgets_ before the time is up, enjoy!
-
 
 ... and more on the way.  
 
@@ -46,11 +45,11 @@ Then a console is displayed. ControLite will automatically detect nearby _gadget
 You may type commands to select patterns or enter random mode.
 
 ```
-pattern <p>         // select pattern p
+pattern <p>         // select pattern p (now we have 8 of them, numbered 0 .. 7)
 pause               // short for pattern 0, which all vibrators are stopped
 high                // short for pattern 1, which all vibrators are at maximum speed
 random              // all gadgets go randomly. note: their patterns can be different
-alarm hh:mm:ss      // set an alarm clock
+alarm <hh:mm:ss>    // set an alarm clock
 ```
 
 ## Contribution
